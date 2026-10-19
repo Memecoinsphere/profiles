@@ -1,0 +1,42 @@
+Profiles — guide d'utilisation (français)
+=======================================
+
+Installation sur iPhone
+-----------------------
+1. Ouvrez le site dans Safari.
+2. Appuyez sur le bouton Partager (carré avec flèche vers le haut).
+3. Choisissez « Sur l'écran d'accueil », puis Ajouter.
+4. Lancez « Profiles » depuis l'écran d'accueil (mode autonome).
+(Android/Chrome : menu ⋮ → « Installer l'application ».)
+
+Déverrouillage (geste caché)
+----------------------------
+Au lancement, l'écran affiche une surface neutre (horloge sobre).
+Ce n'est PAS l'écran de code.
+
+Pour révéler l'écran de code :
+  → Double-tapez rapidement près du HAUT de l'écran
+    (bandeau supérieur, environ les 15 % du haut).
+
+Puis saisissez le code : 6767
+Un code erroné affiche une erreur et le panneau reste verrouillé.
+
+Pour changer le code, éditez dans app.js :
+  // ===== PASSCODE (change here) =====
+  const PASSCODE = "6767";
+
+Verrouillage
+------------
+Le bouton rouge « Lock » renvoie à la surface leurre (horloge).
+Le geste caché est à nouveau nécessaire.
+
+Réglages
+--------
+Liste de profils (Daily, Work, Anon au premier lancement), interrupteur Active/Locked,
+bouton ✕ pour supprimer, section « Add » pour ajouter un profil (verrouillé).
+Tout est UNIQUEMENT décoratif : mémorisé dans le navigateur (localStorage),
+aucun effet réel sur l'appareil. Aucun appel réseau, aucune analytique.
+
+Fichiers
+--------
+Tout est statique (HTML/CSS/JS), sans étape de build ni CDN externe.
